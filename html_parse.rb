@@ -13,8 +13,12 @@ require './local.rb'
 require './especialidade.rb'
 require './prestador.rb'
 
+require './sulamerica.rb'
 require './bradesco.rb'
+require './amil.rb'
 
 # Bradesco.new
 
-pp Prestador.where(plano: 'Bradesco').pluck(:uf).uniq
+Amil.new
+
+# pp Prestador.where(plano: 'Bradesco').pluck(:uf).uniq
